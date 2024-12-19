@@ -90,7 +90,7 @@ window.onerror = function () {
 function checkForBracketMulti() {
   // ... (same code as before)
 
-  if (eval(screenValue) !== undefined) {
+  if (eval(screenValue)) {
     screen.value = eval(screenValue);
     lastScreenValue = screenValue;
     screenValue = screen.value;
